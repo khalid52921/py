@@ -1,0 +1,21 @@
+# Define prices of three items
+item1_price = 15.75
+item2_price = 23.50
+item3_price = 9.99
+
+# Define the total budget
+budget = 60.00
+
+# Calculate the total cost of the items
+total_cost = item1_price + item2_price + item3_price
+
+# Print the total cost
+print(f"Total cost of items: ${total_cost:.2f}")
+
+# Compare the total cost with the budget
+if total_cost <= budget:
+    money_left = budget - total_cost
+    print(f"You are within the budget. Money left: ${money_left:.2f}")
+else:
+    money_needed = total_cost - budget
+    print(f"You are over the budget. You need an extra: ${money_needed:.2f}")
